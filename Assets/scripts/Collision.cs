@@ -16,6 +16,7 @@ public class Collision : MonoBehaviour
     {
         if (collision.CompareTag("Coin"))
         {
+            Destroy(collision.gameObject);
             GM.addScore(1);
         }
     }
