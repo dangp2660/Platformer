@@ -56,7 +56,7 @@ public class Move : MonoBehaviour
     public bool Grounded()
     {
         bool grounded = Physics2D.OverlapCircle(GroundCheck.position, 0.5f, GroundLayer);
-        Debug.Log("Grounded: " + grounded);
+
         return grounded;
     }
 
